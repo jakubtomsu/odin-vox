@@ -86,6 +86,10 @@ load_from_data :: proc(
 
 		case {'R', 'G', 'B', 'A'}:
 			result.palette = read_data(&data, Pallette) or_return
+
+		case:
+			// Skip
+			data = data[chunk.num_bytes:]
 		}
 	}
 
