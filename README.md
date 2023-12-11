@@ -1,7 +1,12 @@
 # odin-vox
 A simple loader for `.vox` models from [MagicaVoxel](https://ephtracy.github.io/).
 
-The [base format](https://github.com/ephtracy/voxel-model/blob/master/MagicaVoxel-file-format-vox.txt) is fully implemented, but no extensions are supported yet.
+The [base format](https://github.com/ephtracy/voxel-model/blob/master/MagicaVoxel-file-format-vox.txt) is fully implemented.
+
+Supported extensions:
+- Materials (including legacy MATT materials)
+
+Latest tested odin version: `dev-2023-12-nightly:31b1aef4`
 
 ## Usage
 ```odin
@@ -20,7 +25,7 @@ if data, ok := vox.load_from_file("my_model.vox", context.temp_allocator); ok {
 ```
 
 ## TODO
-- Implement [extensions](https://github.com/ephtracy/voxel-model/blob/master/MagicaVoxel-file-format-vox-extension.txt)?
+- Implement more [extensions](https://github.com/ephtracy/voxel-model/blob/master/MagicaVoxel-file-format-vox-extension.txt) as necessary
 
 ## Contributing
 All contributions are welcome!
