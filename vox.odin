@@ -70,7 +70,7 @@ load_from_file :: proc(file: string, allocator := context.allocator) -> (Vox, bo
     return {}, false
 }
 
-load_from_data :: proc(data: []u8, allocator := context.temp_allocator) -> (result: Vox, ok: bool) {
+load_from_data :: proc(data: []u8, allocator := context.allocator) -> (result: Vox, ok: bool) {
     data := data
 
     context.allocator = allocator
