@@ -1,4 +1,4 @@
-# odin-vox
+# :package: odin-vox
 A simple loader for `.vox` models from [MagicaVoxel](https://ephtracy.github.io/).
 
 The [base format](https://github.com/ephtracy/voxel-model/blob/master/MagicaVoxel-file-format-vox.txt) is fully implemented.
